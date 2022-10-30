@@ -79,15 +79,15 @@
 					<input type="text" class="form-control border border-bottom-3 my-2 shadow-sm" name="userName" id="userName" placeholder="Username">
                 </div>
                 <div class="">
-					<input type="text" class="form-control border border-bottom-3 my-2 shadow-sm" name="pass" id="pass" placeholder="Password">
+					<input type="text" class="form-control border border-bottom-3 my-2 shadow-sm" name="pass" id="pass" placeholder="Password" minlength="8">
                 </div>
                 <div class="">
-					<input type="text" class="form-control border border-bottom-3 my-2 shadow-sm" name="conpass" id="conpass" placeholder="Confirm Password">
+					<input type="text" class="form-control border border-bottom-3 my-2 shadow-sm" name="conpass" id="conpass" placeholder="Confirm Password" minlength="8">
                 </div>
+                <p id="error"></p>
                 <div><label for="pref">Yes i agree to the <span class="text-info">terms and conditions</span></label>
                 <input type="checkbox" name="Pref" id="mail">
                 </div>
-				<p id="error"></p>
 				<div  class="d-grid gap-2 col-6 mx-auto my-2 " >
 					<input class="btn btn-primary" type="submit" value="Create Account" id="btnLogin">
 				</div>

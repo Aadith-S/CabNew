@@ -8,7 +8,7 @@ function validate(e)
     if(pass.value != conpass.value)
     {
         e.preventDefault();
-        error.innerText = "Password doesn't match";
+        error.innerText = "Passwords don't match";
         error.style.color = "red";
     }
     else{
