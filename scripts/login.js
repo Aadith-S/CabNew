@@ -11,8 +11,8 @@
 //         document.getElementById("error").innerText = "";
 //     } 
 // }
-logged = localStorage.getItem("logged");
-console.log(logged);
+check();
+console.log(localStorage.getItem("logged"));
 var btnlogin = document.getElementById("btnLogin");
 var element = document.querySelectorAll("#loginForm input");
 var uname = document.forms["loginForm"]["userName"];
@@ -37,13 +37,13 @@ function dont(e)
     if(uname.value == "aadi" && pass.value == "12345678"){
         console.log("helo");
         localStorage.setItem("logged",1);
-        console.log(logged);
+        console.log(localStorage.getItem("logged"));
     }
 }
 
 function check()
 {
-    if(logged == 1)
+    if((localStorage.getItem("logged")) == 1)
 {   console.log("hlocheck");
     document.querySelectorAll(".loggedin").forEach(e=>{
         e.classList.add("dropdown-item");
