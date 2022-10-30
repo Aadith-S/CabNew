@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Cab</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/signup.css">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Arju Cabs <img src="css/logo.png" alt="" height="30px"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Booking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutus">About Us</a>
+                </li>
+            </ul>
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle " href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="css/person.png" alt="" height="30px"></a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="signup.html" style="display: none;">Profile</a>
+                    <a class="dropdown-item" href="login.html">Log In</a>
+                    <a class="dropdown-item" href="signup.html">Sign Up</a>
+                    <a class="dropdown-item" href="signup.html" style="display: none;">Logout</a>
+                </div>
+            </div>
+        </div>
+  </div>
+</nav>
+<div class="container-fluid mb-3 d-flex flex-row justify-content-center" id="cabbody" >
+    <img src="css/yellow-cars-city-taxi_566596-23 (1).jpeg" alt="" class="cabimg">
+	<div class="w-50 d-inline-block py-3 shadow-lg rounded-4 border border-2 "id="cablogin">
+	<div class="py-3">
+		<p class="h1 text-center">Sign Up</p>
+	</div>
+	<div class="row" >
+		<div class="col-sm-6 offset-sm-3">
+			<form onsubmit="validate(event);" id="loginForm" >
+				<div>
+					<input type="text" class="form-control border border-bottom-3 mb-2 shadow-sm" name="firstName" id="firstName" placeholder="First Name">
+				</div>
+                <div>
+					<input type="text" class="form-control border border-bottom-3 mb-2 shadow-sm" name="lastName" id="lastName" placeholder="Last Name">
+				</div>
+                <div class="my-2 ms-1">
+                    <label for="Gender" class="me-2">Gender :</label>
+                    <input type="radio" name="Gender" id="Male">Male
+                    <input type="radio" name="Gender" id="Female">Female
+                </div>
+                <div class="ms-1">
+                    <label for="addr">Address :</label>
+                    <textarea name="addr" id="addr" cols="36" rows="5" placeholder="Your Address"style="border-width:2px" class="mt-2"></textarea> 
+                </div>
+                <div>
+					<input type="text" class="form-control border border-bottom-3 my-2 shadow-sm" name="pNo" id="pNo" placeholder="Phone Number">
+				</div>
+                <div>
+					<input type="text" class="form-control border border-bottom-3 my-2 shadow-sm" name="email" id="email" placeholder="Email">
+				</div>
+                <div class="">
+					<input type="text" class="form-control border border-bottom-3 my-2 shadow-sm" name="userName" id="userName" placeholder="Username">
+                </div>
+                <div class="">
+					<input type="text" class="form-control border border-bottom-3 my-2 shadow-sm" name="pass" id="pass" placeholder="Password">
+                </div>
+                <div class="">
+					<input type="text" class="form-control border border-bottom-3 my-2 shadow-sm" name="conpass" id="conpass" placeholder="Confirm Password">
+                </div>
+                <div><label for="pref">Yes i agree to the <span class="text-info">terms and conditions</span></label>
+                <input type="checkbox" name="Pref" id="mail">
+                </div>
+				<p id="error"></p>
+				<div  class="d-grid gap-2 col-6 mx-auto my-2 " >
+					<input class="btn btn-primary" type="submit" value="Create Account" id="btnLogin">
+				</div>
+			</form>
+		</div>
+	</div>
+	</div>
+</div>
+<div>
+	<footer class="bg-dark text-light" style="z-index: 4;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					About Us
+                    <p>
+                        Arju-Cabs was started in the year 2010 in the city of Cochin to provide quality vehicle rental service and has been since catering to thousands of tourist, businessmen, corporates, instutions etc.</p>
+
+                    </p>
+                </div>
+				<div class="col-sm-2 row">Pages
+					<ul>
+						<li class="link-li mb-2"><a href="">Home</a></li>
+						<li class="link-li mb-2"><a href="">About Us</a></li>
+						<li class="link-li mb-2"><a href="">Register</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">Contact Us
+					<p> Pho No. +91877867656</p>
+                    <p> Email : arjuCabs@email.com</p>
+					<p> Addr. ArjuNivas, Kochi</p>
+				</div>
+                <div class="col-sm mt-5 ms-5 display-6">
+                    Arju Cabs <img src="css/logo.png" alt="" height="40px">
+                </div>
+			</div>
+		</div>
+	</footer>
+</div>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="scripts/signup.js"></script>
+</body>
+
+</html>
