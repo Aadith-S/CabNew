@@ -34,12 +34,12 @@
                 </li>
             </ul>
             <div class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle " href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="css/person.png" alt="" height="30px"></a>
+                <a class="nav-link dropdown-toggle " href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img id="pimg" class="rounded-5" src="css/person.png" alt="" height="30px"></a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                    <a class="dropdown-item" href="signup.html" style="display: none;">Profile</a>
-                    <a class="dropdown-item" href="login.html">Log In</a>
-                    <a class="dropdown-item" href="signup.html">Sign Up</a>
-                    <a class="dropdown-item" href="signup.html" style="display: none;">Logout</a>
+                    <a class="loggedin hide" href="#" >Profile</a>
+                    <a class="dropdown-item loggedout" href="login.html" >Log In</a>
+                    <a class="dropdown-item loggedout" href="signup.html">Sign Up</a>
+                    <a class="loggedin hide" href="#" onclick="logout();">Logout</a>
                 </div>
             </div>
         </div>
@@ -77,13 +77,13 @@
     </div>
 </div>
 <div class="container row justify-content-between" id="aboutus">
-    <div class="item col-6 rounded-4 text-decoration-underline shadow-lg ms-5" >
+    <div class="item col-6 rounded-4  shadow-lg ms-5" >
         <p>
             Arju-Cabs was started in the year 2010 in the city of Cochin to provide quality vehicle rental service and has been since catering to thousands of tourist, businessmen, corporates, instutions etc. with varied transport solutions ranging from daily vehicle rentals of budget to premium luxury vehicles and further to holiday & business trips including corporate transport solutions</p>
 
     </div>
     <div class="item col-5" style="background-color: rgb(232, 232, 232,0);">
-        <img src="css/yellow-cars-city-taxi_566596-23 (1).jpeg" alt="" width="500px" class="rounded-4"">
+        <img src="css/yellow-cars-city-taxi_566596-23 (1).jpeg" alt="" width="500px" class="rounded-4">
     </div>
     <div class="container ms-5 h5 bg-dark text-light my-5 py-2 rounded-4 pe-1">
     <div class="row border-bottom p-1">

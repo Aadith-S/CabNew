@@ -32,7 +32,6 @@ element.forEach(e=>{
 })
 function dont(e)
 {
-    e.preventDefault();
     console.log("hlodont");
     if(uname.value == "aadi" && pass.value == "12345678"){
         console.log("helo");
@@ -52,6 +51,7 @@ function check()
         e.classList.add("hide");
         e.classList.remove("dropdown-item");
     })
+    document.getElementById("pimg").setAttribute("src","css/download.jfif");
 }
 }
 function logout()
@@ -66,4 +66,5 @@ function logout()
         e.classList.remove("hide");
         e.classList.add("dropdown-item");
     })
+    document.getElementById("pimg").setAttribute("src","css/person.png");
 }
